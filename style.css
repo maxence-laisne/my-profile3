@@ -1,0 +1,156 @@
+/* CSS */
+
+/* Common */
+
+body, h1, h2, a, ul {
+	text-align: center;
+}
+h1, h2 {
+	font-family: Calibri;
+}
+
+/* Elements */
+
+body {
+  	background-color: #f4fefe;
+  	color: #6a6a6a;
+	font-family: 'Lora', serif;
+	
+	font-size: 16px;
+	font-weight: lighter;
+}
+h1 {
+  	color: #005DA6;
+	
+	font-size: 40px;
+	font-weight: lighter;
+	font-size: 60px;
+	letter-spacing: 3px;
+	margin: 30px;
+	animation: blink 15s linear infinite;
+ 	 -webkit-animation: blink 15s linear infinite;
+}
+h2 {
+  	color: #008ED3;
+	font-size: 24px;
+}
+a {
+	text-decoration: none;
+    color: #0073B0;
+    font-weight: bold;
+    transition: color 0.15s ease;
+    font-style: italic;
+}
+a:hover {
+	color: #005DA6;
+}
+ul {
+	padding-left:15px;
+}
+
+/* Classes and medias */
+
+.container {
+	width: 730px;
+    margin: 100px auto; 
+}
+@media (max-width: 760px) {
+	.container {
+		width: 600px; 
+	}
+}
+@media (max-width: 500px) {
+	.container {
+		width: 400px; 
+	}
+}
+
+.card-white {
+	background: white;
+	padding: 20px;
+	margin: 30px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+	border-radius: 4px
+}
+.card-white:hover {
+	background-color: rgb(250,250,250);
+}
+
+.list-inline {
+  list-style: none; 
+  padding-left: 20px;
+  padding-right: 0px;
+}
+.list-inline > li {
+  display: inline;
+  padding: 0px 15px;
+}
+.icon-socialmedia {
+	font-size: 50px;
+}
+
+/* Ids */
+
+#btn-blue {
+	padding: 4px 7px;
+	border-radius: 4px;
+	border: 1px solid #005DA6;
+}
+#btn-blue:hover {
+	border: 1px dashed #005DA6;
+}
+
+/* Extra */
+
+@keyframes blink {
+  0% {
+    color: violet;
+  }
+  14.3% {
+    color: indigo;
+  }
+  28.6% {
+    color: blue;
+  }
+  42.9% {color
+    color: green;
+  }
+  57.2% {
+    color: yellow;
+  }
+  71.5% {
+    color: orange;
+  }
+  85.8% {
+    color: red;
+  }
+  100% {
+    color: violet;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    color: violet;
+  }
+  14.3% {
+    color: indigo;
+  }
+  28.6% {
+    color: blue;
+  }
+  42.9% {
+    color: green;
+  }
+  57.2% {
+    color: yellow;
+  }
+  71.5% {
+    color: orange;
+  }
+  85.8% {
+    color: red;
+  }
+  100% {
+    color: violet;
+  }
+}
